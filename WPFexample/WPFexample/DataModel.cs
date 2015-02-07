@@ -8,7 +8,7 @@ namespace WPFexample
 {
     public class DataModel
     {
-        public string apiResult = "n";
+        public string apiResult = "null";
 
         private void GetDataFromApi()
         {
