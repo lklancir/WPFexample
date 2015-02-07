@@ -1,0 +1,21 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WPFexample" x:Class="WPFexample.MainWindow"
+        DataContext="{Binding ''}"
+        
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" 
+			Margin="110,126,0,0" 
+			TextWrapping="Wrap" 
+            Text="{Binding ApiResult}"
+			VerticalAlignment="Top" 
+			RenderTransformOrigin="0.296,-1.239">
+            <TextBlock.DataContext>
+                <local:ViewModel/>
+            </TextBlock.DataContext>
+        </TextBlock>
+
+    </Grid>
+</Window>
